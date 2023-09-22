@@ -134,7 +134,7 @@ class Installer extends LibraryInstaller
     public function removeCode(PackageInterface $package)
     {
         $this->removeComponent($package);
-        parent::removeCode($package);
+        return parent::removeCode($package);
     }
 
     /**
@@ -157,7 +157,7 @@ class Installer extends LibraryInstaller
     public function installCode(PackageInterface $package)
     {
         $this->removeComponent($package);
-        parent::installCode($package);
+        return parent::installCode($package);
     }
 
     /**
